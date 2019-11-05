@@ -188,6 +188,46 @@ header .header-row a:hover {
   display: inline-block;
 }
 
+@media screen and (max-width: 1200px) {
+  .latest-works .container .row .latest-works-image .servicing-col-4 {
+    width: 300px;
+    height: 300px;
+    margin: 30px 15px 0;
+  }
+
+  .pricing-plan .container .row .rate .clipPolygon {
+    width: 305px;
+  }
+  .pricing-plan .container .row .rate .rate-ul {
+    width: 305px;
+  }
+  .pricing-plan .container .row .rate .rate-ul .btn {
+    padding: 5px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .home .row h1 {
+    font-size: 40px;
+  }
+  .home .row .home-bt .bt-left {
+    padding: 10px 15px;
+  }
+  .home .row .home-bt .bt-right {
+    padding: 10px 15px;
+  }
+
+  .latest-works .container .row .latest-works-image .servicing-col-4 {
+    max-width: 50%;
+    margin: 40px 20px 0;
+  }
+
+  .servicing .container .row .servicing-block .servicing-col-4 {
+    max-width: 45%;
+    padding: 25px 25px;
+    margin: 0 10px 20px;
+  }
+}
 /*section about*/
 .about {
   padding: 50px 0;
@@ -374,7 +414,7 @@ header .header-row a:hover {
 }
 .latest-works .latest-works-bt .latest-works-image .bottom-bt {
   margin-top: 50px;
-  padding: 20px 60px;
+  padding: 20px 50px;
   border: 2px solid #00897b;
   border-radius: 0;
   font-family: "OpenSans-Semibold", sans-serif;
@@ -460,6 +500,9 @@ header .header-row a:hover {
   display: flex;
   flex-wrap: wrap;
 }
+.pricing-plan .plan .rate .rate-col {
+  margin: 20px auto 0;
+}
 .pricing-plan .plan .rate .rate-col:hover .rate-ul {
   box-shadow: 0px 3px 25px 0 rgba(0, 0, 0, 0.35);
 }
@@ -537,6 +580,9 @@ header .header-row a:hover {
 /*section team*/
 .team {
   padding: 50px 0;
+}
+.team .slick-slide {
+  width: 200px;
 }
 .team .team-block {
   display: flex;
@@ -638,7 +684,25 @@ header .header-row a:hover {
   justify-content: center;
   flex-wrap: wrap;
 }
+.blog .blog-row .blog-block .blog-col-1 {
+  width: 300px;
+  height: 300px;
+  background-image: url("../image/Layer 11.png");
+}
+.blog .blog-row .blog-block .blog-col-2 {
+  background-image: url("../image/apple-desk.png");
+  width: 300px;
+  height: 300px;
+}
+.blog .blog-row .blog-block .blog-col-2 {
+  background-image: url("../image/imac-apple.png");
+  width: 300px;
+  height: 300px;
+}
 .blog .blog-row .blog-block .blog-col {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 45%;
   margin: 15px;
   display: flex;

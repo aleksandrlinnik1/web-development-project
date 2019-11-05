@@ -143,6 +143,88 @@ header {
         display: inline-block;
     }     
 }
+@media screen and (max-width: 1200px) {
+    .latest-works {
+        .container {
+            .row {
+                .latest-works-image {
+                    .servicing-col-4 {
+                        width: 300px;
+                        height: 300px;
+                        margin: 30px 15px 0;                
+                    }
+                } 
+            } 
+        }
+        
+    } 
+    .pricing-plan {
+        .container {
+            .row {
+                .rate {
+                    .clipPolygon {
+                        width: 305px;
+                    }
+                    .rate-ul {
+                        width: 305px;
+                        .btn {
+                            padding: 5px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+@media screen and (max-width: 992px) {
+    
+    .home {
+        .row {
+            h1 {
+        
+                font-size: 40px;
+                
+            }
+            .home-bt {
+                .bt-left {
+                    padding: 10px 15px;
+                    
+                }
+                .bt-right {                
+                    padding: 10px 15px;
+                            
+                }
+            }
+        } 
+    }
+    .latest-works {
+        .container {
+            .row {
+                .latest-works-image {
+                    .servicing-col-4 {
+                        max-width: 50%;
+                        margin: 40px 20px 0;                 
+                    }
+                } 
+            } 
+        }
+        
+    } 
+    .servicing {
+        .container {
+            .row {
+                .servicing-block {
+                    .servicing-col-4 {
+                        max-width: 45%;
+                        padding: 25px 25px;
+                        margin: 0 10px 20px;
+                    }
+                }    
+            }
+        }
+    }
+}
 
 /*section about*/
 .about {
@@ -334,7 +416,7 @@ header {
             }
         .bottom-bt {
             margin-top: 50px;
-            padding: 20px 60px;
+            padding: 20px 50px;
             border: 2px solid #00897b;
             border-radius: 0;
             font-family: "OpenSans-Semibold", sans-serif;
@@ -420,6 +502,9 @@ header {
             font-family: "OpenSans", sans-serif;
             display: flex;
             flex-wrap: wrap;
+            .rate-col {
+                margin: 20px auto 0;
+            }
             .rate-col:hover {
                 .rate-ul{
                     box-shadow: 0px 3px 25px 0 rgba(0, 0, 0, 0.35);
@@ -502,6 +587,10 @@ header {
 /*section team*/
 .team {
     padding: 50px 0;
+    .slick-slide
+{
+width: 200px;
+}
     .team-block {
     display: flex;
     flex-direction: column;
@@ -603,7 +692,25 @@ header {
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
+            .blog-col-1 {
+                width: 300px;
+                height: 300px;
+                background-image: url("../image/Layer 11.png");
+            }
+            .blog-col-2 {
+                background-image: url("../image/apple-desk.png");
+                width: 300px;
+                height: 300px;
+            }
+            .blog-col-2 {
+                background-image: url("../image/imac-apple.png");
+                width: 300px;
+                height: 300px;
+            }
             .blog-col {
+                background-size: cover;
+    background-repeat: no-repeat;    
+    background-position: center center;
                 a {
                     text-decoration: none;
                 }
