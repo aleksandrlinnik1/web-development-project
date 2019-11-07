@@ -180,6 +180,10 @@ header .header-row a:hover {
   font-size: 20px;
   color: #fff;
 }
+.home .row .home-bt a {
+  color: #fff;
+  text-decoration: none;
+}
 .home .row .home-bt .bt-left {
   margin: 0 10px;
   padding: 20px 34px;
