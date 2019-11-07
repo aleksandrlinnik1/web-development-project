@@ -21,3 +21,10 @@ $('.team-slide').slick({
       }
     ]
   });
+  $(document).ready(function () {
+    let searchBlock = $('#form');
+    $(document).on('click', '#open', function () {
+      searchBlock.slideToggle();
+      return false;
+    });
+  });

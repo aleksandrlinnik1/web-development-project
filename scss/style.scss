@@ -56,6 +56,21 @@ header {
         .r-block {
             display: flex;
             align-items: center;
+            button {
+                border: none;
+                background: none;
+                font-size: 20px;
+            }
+            button:hover {
+                color: rgba(0, 0, 0, 0.6);
+            }
+            #form {
+                input {
+                    width: 125px;
+                }
+                padding: 10px;
+                display: none;
+              }
         }
         .navbar-brand {
             font-size: 25px;
@@ -810,6 +825,17 @@ footer {
    
 }
 @media screen and (max-width: 1200px) {
+    // header {
+    //     .header-row {
+    //         .r-block {
+    //             #form {
+    //                 position: absolute;
+    //                 top: 50px;
+    //                 right: 50px;
+    //               }
+    //         }
+    //     }
+    // }
     .latest-works {
         .container {
             .row {
@@ -856,7 +882,6 @@ footer {
     }
 }
 @media screen and (max-width: 992px) {
-    
     .home {
         .row {
             h1 {

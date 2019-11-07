@@ -103,6 +103,21 @@ header .header-row .r-block {
   display: flex;
   align-items: center;
 }
+header .header-row .r-block button {
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+header .header-row .r-block button:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+header .header-row .r-block #form {
+  padding: 10px;
+  display: none;
+}
+header .header-row .r-block #form input {
+  width: 125px;
+}
 header .header-row .navbar-brand {
   font-size: 25px;
 }
