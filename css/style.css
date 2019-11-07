@@ -116,7 +116,7 @@ header .header-row .r-block #form {
   display: none;
 }
 header .header-row .r-block #form input {
-  width: 125px;
+  width: 75px;
 }
 header .header-row .navbar-brand {
   font-size: 25px;
@@ -186,7 +186,7 @@ header .header-row a:hover {
 }
 .home .row .home-bt .bt-left:hover, .home .row .home-bt .bt-right:hover {
   background-color: #00897b;
-  border: solid 2px transparent;
+  border: solid 2px #00897b;
   cursor: url("../image/cursor.png"), pointer;
 }
 .home .arrow {
@@ -1074,7 +1074,10 @@ footer .row h2 {
 }
 @media screen and (max-width: 576px) {
   header .header-row {
-    padding: 0 20px;
+    padding: 0 10px;
+  }
+  header .header-row .navbar-brand {
+    margin: 0;
   }
 
   .home .row h1 {
