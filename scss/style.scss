@@ -148,7 +148,6 @@ header {
 /*section about*/
 .about {
     padding: 50px 0;
-    background-color: #8c8c8c;
     font-family: "OpenSans", sans-serif;
     .about-row {
         display: flex;
@@ -179,8 +178,7 @@ header {
                 }
             }
         }
-    }
-    
+    }  
   
     
 }
@@ -270,7 +268,6 @@ header {
 /*section latest-works*/
 .latest-works {
     padding: 50px 0;
-    background-color: #8c8c8c;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -510,7 +507,6 @@ header {
 
 /*section team*/
 .team {
-    background-color: #8c8c8c;
     padding: 50px 0;
     .slick-slide
 {
