@@ -45,7 +45,7 @@ header {
         justify-content: space-between;
         .show {
             position: absolute;
-            top: 15px;
+            top: 50px;
             right: 65px;
             background-color: #fff;
             border: 2px solid #8c8c8c;
@@ -57,6 +57,9 @@ header {
             display: flex;
             align-items: center;
             .navbar {
+                .collapsing {
+                    display: none;
+                }
                 padding: 0;
             }
             button {

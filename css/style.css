@@ -91,7 +91,7 @@ header .header-row {
 }
 header .header-row .show {
   position: absolute;
-  top: 15px;
+  top: 50px;
   right: 65px;
   background-color: #fff;
   border: 2px solid #8c8c8c;
@@ -105,6 +105,9 @@ header .header-row .r-block {
 }
 header .header-row .r-block .navbar {
   padding: 0;
+}
+header .header-row .r-block .navbar .collapsing {
+  display: none;
 }
 header .header-row .r-block button {
   border: none;
