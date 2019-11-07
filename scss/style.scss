@@ -56,6 +56,9 @@ header {
         .r-block {
             display: flex;
             align-items: center;
+            .navbar {
+                padding: 0;
+            }
             button {
                 border: none;
                 background: none;
