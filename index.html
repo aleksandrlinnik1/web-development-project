@@ -13,79 +13,81 @@
   <body>
     <header>
         <div class="container">
-            <div class="row header-row">
-                <a class="navbar-brand" href="#">Your Logo</a>
+            <div class="row">
+                <a title="Your Logo" class="navbar-brand" href="#">Your Logo</a>
                 <div class="r-block">
                     <div class="navbar navbar-expand-lg">                    
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span ><i class="fa fa-bars" aria-hidden="true"></i></span>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span ><i class="fa fa-bars" aria-hidden="true"></i></span>
                         </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#plan">Servicing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#team">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#blog">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact us</a>
-                            </li>             
-                        </ul>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a title="Home" class="nav-link" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a title="About" class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a title="Servicing" class="nav-link" href="#plan">Servicing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a title="Portfolio" class="nav-link" href="#team">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a title="Blog" class="nav-link" href="#blog">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a title="Contact us" class="nav-link" href="#contact">Contact us</a>
+                                </li>             
+                            </ul>
+                        </div>
+                        <button id="open"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        <div id="form">
+                            <form action="#" method="post">
+                                <input type="text" value="" placeholder="Search" />
+                            </form>
+                        </div>    
                     </div>
-                <button id="open"><i class="fa fa-search" aria-hidden="true"></i></button>
-                <div id="form">
-                    <form action="#" method="post">
-                        <input type="text" value="" placeholder="Search" />
-                    </form>
-                </div>    
-            </div>
-        </div>                  
+                </div>  
+            </div> 
+        </div>               
     </header>      
-    <section class="home">
+    <section class="home" id="home">
         <div class="container">
-            <div class="row" id="home">                
+            <div class="row">                
                     <h1>Web development project</h1>
                     <p>Very suitable to support all web development projects</p>
                     <div class="home-bt">
-                        <a class="text-uppercase bt-left" href="#services">our services</a>
-                        <a class="text-uppercase bt-right" href="#now">hire is now</a> 
+                        <a title="Our services" class="text-uppercase bt-left" href="#services">our services</a>
+                        <a title="Hire is now" class="text-uppercase bt-right" href="#now">hire is now</a> 
                     </div>                                                     
             </div>  
-            <a class="arrow"  href="#"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+            <a title="Down" class="arrow"  href="#about"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
         </div>                                     
     </section>
     <section class="about" id="about"> 
         <div class="container">
-            <div class="row about-row text-center">
+            <div class="row">
                 <h2>About Us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>                
                 <div class="about-card col-12">
                     <div class="card col-12 col-sm-4 text-center">
-                        <img class="mx-auto" src="./image/internet.png"  alt="internet">
+                        <img class="mx-auto" src="./image/internet.png" title="Internet"  alt="internet">
                         <div class="card-body">
                             <h5 class="card-title">Awesome Icons</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, con&shy;sectetur adipisicing elit, sed do eiusmod tempor</p>                         
                         </div>
                     </div>
                     <div class="card col-12 col-sm-4 text-center">
-                        <img class="mx-auto" src="./image/transfer.png"  alt="transfer">
+                        <img class="mx-auto" src="./image/transfer.png" title="Transfer"  alt="transfer">
                         <div class="card-body">
                             <h5 class="card-title">One Page</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, con&shy;sectetur adipisicing elit, sed do eiusmod tempor</p>
                         </div>
                     </div>
                     <div class="card col-12 col-sm-4 text-center">
-                        <img class="mx-auto" src="./image/head.png" alt="head">
+                        <img class="mx-auto" src="./image/head.png" title="Head" alt="head">
                         <div class="card-body">
                             <h5 class="card-title">Fully Responsive</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, con&shy;sectetur adipisicing elit, sed do eiusmod tempor</p>
@@ -97,48 +99,48 @@
     </section>
     <section class="servicing" id="servicing"> 
         <div class="container">
-            <div class="row text-center servicing-row">
+            <div class="row">
                 <h2 id="services">Our Services</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p> 
-                <div class="servicing-block">
-                    <div class="servicing-col-4 text-center">
+                <div class="servicing-wrapper">
+                    <div class="unit">
                         <img class="phone" src="./image/phone.png" alt="phone">
-                        <img class="phonehover" src="./image/phonehover.png" alt="phone">
+                        <img class="phonehover" src="./image/phonehover.png" title="phone" alt="phone">
                         <h5 >Research</h5>
                         <p >At vero eos et accusamus et iusto odio dignissimos ducimus qui blan&shy;ditiis praesentium voluptatum iti atque corrupti quos.</p>
                         <a href="#" class="btn">READ MORE</a>
                     </div>
-                    <div class="servicing-col-4 text-center">
+                    <div class="unit">
                         <img class="phone" src="./image/phone.png" alt="phone">
-                        <img class="phonehover" src="./image/phonehover.png" alt="phone">
+                        <img class="phonehover" src="./image/phonehover.png" title="phone" alt="phone">
                         <h5>Portfolio</h5>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blan&shy;ditiis praesentium voluptatum iti atque corrupti quos.</p>
                         <a href="#" class="btn">READ MORE</a>
                     </div>
-                    <div class="servicing-col-4 text-center">
+                    <div class="unit">
                         <img class="phone" src="./image/phone.png" alt="phone">
-                        <img class="phonehover" src="./image/phonehover.png" alt="phone">
+                        <img class="phonehover" src="./image/phonehover.png" title="phone" alt="phone">
                         <h5>Support</h5>
                         <p >At vero eos et accusamus et iusto odio dignissimos ducimus qui blan&shy;ditiis praesentium voluptatum iti atque corrupti quos.</p>
                         <a href="#" class="btn">READ MORE</a>
                     </div>
-                    <div class="servicing-col-4 text-center">
+                    <div class="unit">
                         <img class="phone" src="./image/phone.png" alt="phone">
-                        <img class="phonehover" src="./image/phonehover.png" alt="phone">
+                        <img class="phonehover" src="./image/phonehover.png" title="phone" alt="phone">
                         <h5>Documentation</h5>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blan&shy;ditiis praesentium voluptatum iti atque corrupti quos.</p>
                         <a href="#" class="btn">READ MORE</a>
                     </div>
-                    <div class="servicing-col-4 text-center">                        
+                    <div class="unit">                        
                         <img class="phone" src="./image/phone.png" alt="phone">
-                        <img class="phonehover" src="./image/phonehover.png" alt="phone">
+                        <img class="phonehover" src="./image/phonehover.png" title="phone" alt="phone">
                         <h5>Development</h5>
                         <p >At vero eos et accusamus et iusto odio dignissimos ducimus qui blan&shy;ditiis praesentium voluptatum iti atque corrupti quos.</p>
                         <a href="#" class="btn">READ MORE</a>
                     </div>
-                    <div class="servicing-col-4 text-center">
+                    <div class="unit">
                         <img class="phone" src="./image/phone.png" alt="phone">
-                        <img class="phonehover" src="./image/phonehover.png" alt="phone">
+                        <img class="phonehover" src="./image/phonehover.png" title="phone" alt="phone">
                         <h5>Design</h5>
                         <p >At vero eos et accusamus et iusto odio dignissimos ducimus qui blan&shy;ditiis praesentium voluptatum iti atque corrupti quos.</p>
                         <a href="#" class="btn">READ MORE</a>
@@ -148,77 +150,24 @@
         </div>             
     </section>  
     <section class="latest-works" id="now">  
-        <div class="container laters-works-block">
-            <div class="row latest-works-bt">
+        <div class="container">
+            <div class="row">
                 <h2>Latest Works</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                <ul class="col-sm-12">
-                    <li><a href="#" class="btn all">ALL</a></li>
-                    <li><a href="#" class="btn">WEB DESIGN</a></li>
-                    <li><a href="#" class="btn">UI/UX DESIGN</a></li>
-                    <li><a href="#" class="btn">MOCKUPS</a></li>
+                <ul class="col-sm-12 categories">
                 </ul>
-                <div class="col-md-12 latest-works-image">
-                    <div class="servicing-col-4 image-col-1">  
-                        <div class="sec-servicing">
-                            <a href="#">
-                                <h5 class="card-title">Hand Watch</h5>
-                                <p class="card-text">UI/UX DESIGN</p>
-                            </a>                                
-                        </div>                               
-                    </div>
-                    <div class="servicing-col-4 image-col-2">
-                        <div class="sec-servicing">
-                            <a href="#">
-                                <h5 class="card-title">One day pass</h5>
-                                <p class="card-text">MOCKUPS</p>
-                                <p class="card-text">WEB DESIGN</p>
-                            </a>
-                        </div>                        
-                    </div>
-                    <div class="servicing-col-4 image-col-3"> 
-                        <div class="sec-servicing">
-                            <a href="#">    
-                                <h5 class="card-title">Underwear</h5>
-                                <p class="card-text">UI/UX DESIGN</p>
-                            </a>
-                        </div>                                 
-                    </div>
-                    <div class="servicing-col-4 image-col-4"> 
-                        <div class="sec-servicing">
-                            <a href="#">
-                                <h5 class="card-title">Scrub</h5>
-                                <p class="card-text">MOCKUPS</p>
-                            </a> 
-                        </div>                                                                              
-                    </div>
-                    <div class="servicing-col-4 image-col-5">
-                        <div class="sec-servicing">
-                            <a href="#">
-                                <h5 class="card-title">Wine</h5>
-                                <p class="card-text">MOCKUPS</p>
-                            </a>
-                        </div>      
-                    </div>
-                    <div class="servicing-col-4 image-col-6">
-                        <div class="sec-servicing">
-                            <a href="#">    
-                            <h5 class="card-title">Bags</h5>
-                            <p class="card-text">WEB DESIGN</p>
-                            </a>
-                        </div>       
-                    </div> 
-                    <a href="#" class="btn bottom-bt">VIEW ALL</a>
-                </div> 
-            </div>            
+                <div class="col-md-12 latest-works-wrapper"></div> 
+                <a title="VIEW ALL" href="#" class="btn bottom-bt">VIEW ALL</a>
+            </div>  
+        </div>          
     </section>   
     <section class="pricing-plan" id="plan">
         <div class="container">
-            <div class="row plan">
+            <div class="row">
                 <h2>Pricing Plan</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                <div class="rate">
-                    <div class="col-md-6 col-lg-4 text-center rate-col">  
+                <div class="pricing-plan-wrapper">
+                    <div class="col-md-6 col-lg-4 pricing-plan-unit">  
                         <div class="clipPolygon">
                             <h2>Free Trail</h2>
                             <h5><sup>$</sup><span>00</span> per month</h5>
@@ -231,7 +180,7 @@
                             <li class="bottom-bt"><a href="#" class="btn">ORDER NOW</a></li>
                         </ul>                    
                     </div>
-                    <div class="col-md-6 col-lg-4 text-center rate-col">  
+                    <div class="col-md-6 col-lg-4 pricing-plan-unit">  
                         <div class="clipPolygon">
                             <h2>Basic</h2>
                             <h5><sup>$</sup><span>50</span> per month</h5>
@@ -244,12 +193,12 @@
                             <li class="bottom-bt"><a href="#" class="btn">ORDER NOW</a></li>
                         </ul>                     
                     </div>
-                    <div class="col-md-6 col-lg-4 text-center rate-col"> 
+                    <div class="col-md-6 col-lg-4 pricing-plan-unit"> 
                         <div class="clipPolygon">
                             <h2>Ultimates</h2>
                             <h5><sup>$</sup><span>99</span> per month</h5>
                         </div>                                                     
-                        <ul class="rate-ul">
+                        <ul>
                             <li>30 Free Trail</li>
                             <li>5 Free Projects</li>
                             <li>PHP 5 Enabket</li>
@@ -259,112 +208,112 @@
                     </div>
                 </div>
             </div>              
-        
+        </div>
     </section>
     <section class="team" id="team">
-        <div class="container team-block">
+        <div class="container">
             <div class="team-head">
                 <h2>Our Team Member</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
             </div>            
-            <div class="team-slide">
-                <div class="text-center team-col ">
-                    <img src="./image/Layer 81.png" alt="General Manager">
+            <div class="team-wrapper">
+                <div class="team-unit">
+                    <img src="./image/Layer 81.png" title="General Manager" alt="General Manager">
                     <h5>John Doe</h5>
                     <p>General Manager</p>
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li><a title="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a title="twitter" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a title="comments" href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+                        <li><a title="dribbble" href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>          
-                <div class="text-center team-col">
-                    <img src="./image/Layer 91.png" alt="Office Director">
+                <div class="team-unit">
+                    <img src="./image/Layer 91.png" title="Office Director" alt="Office Director">
                     <h5>Alexa Biru</h5>
                     <p>Office Director</p>
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li><a title="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a title="twitter" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a title="comments" href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+                        <li><a title="dribbble" href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
-                <div class="text-center team-col">
-                    <img src="./image/Layer 10.png" alt="Admin">
+                <div class="team-unit">
+                    <img src="./image/Layer 10.png" title="Admin"  alt="Admin">
                     <h5 class="card-title">Ronobir sing</h5>
                     <p class="card-text">Admin</p>
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li><a title="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a title="twitter" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a title="comments" href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+                        <li><a title="dribbble" href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>   
-                <div class="text-center team-col ">
-                    <img src="./image/Layer 81.png" alt="General Manager">
+                <div class="team-unit ">
+                    <img src="./image/Layer 81.png" title="General Manager" alt="General Manager">
                     <h5>John Doe</h5>
                     <p>General Manager</p>
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li><a title="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a title="twitter" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a title="comments" href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+                        <li><a title="dribbble" href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>          
-                <div class="text-center team-col">
-                    <img src="./image/Layer 91.png" alt="Office Director">
+                <div class="team-unit">
+                    <img src="./image/Layer 91.png" title="Office Director" alt="Office Director">
                     <h5>Alexa Biru</h5>
                     <p>Office Director</p>
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li><a title="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a title="twitter" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a title="comments" href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+                        <li><a title="dribbble" href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
-                <div class="text-center team-col">
-                    <img src="./image/Layer 10.png" alt="Admin">
+                <div class="team-unit">
+                    <img src="./image/Layer 10.png" title="Admin" alt="Admin">
                     <h5 class="card-title">Ronobir sing</h5>
                     <p class="card-text">Admin</p>
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li><a title="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a title="twitter" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a title="comments" href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+                        <li><a title="dribbble" href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
-                <div class="text-center team-col ">
-                    <img src="./image/Layer 81.png" alt="General Manager">
+                <div class="team-unit">
+                    <img src="./image/Layer 81.png" title="General Manager" alt="General Manager">
                     <h5>John Doe</h5>
                     <p>General Manager</p>
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li><a title="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a title="twitter" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a title="comments" href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+                        <li><a title="dribbble" href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>          
-                <div class="text-center team-col">
-                    <img src="./image/Layer 91.png" alt="Office Director">
+                <div class="team-unit">
+                    <img src="./image/Layer 91.png" title="Office Director" alt="Office Director">
                     <h5>Alexa Biru</h5>
                     <p>Office Director</p>
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li><a title="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a title="twitter" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a title="comments" href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+                        <li><a title="dribbble" href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
-                <div class="text-center team-col">
-                    <img src="./image/Layer 10.png" alt="Admin">
+                <div class="team-unit">
+                    <img src="./image/Layer 10.png" title="Admin" alt="Admin">
                     <h5 class="card-title">Ronobir sing</h5>
                     <p class="card-text">Admin</p>
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li><a title="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a title="twitter" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a title="comments" href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+                        <li><a title="dribbble" href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>   
@@ -423,16 +372,24 @@
                 <h2>Contact Us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
             </div>
-            <div class="contact-row">
-                <div class="asd col-sm-3">
-                    <div class="qwe"><a href="https://www.google.com/maps/place/Nandan+Park/@24.0300501,90.2398112,15z/ data=!4m5!3m4!1s0x0:0x2672755a1a131e3e!8m2!3d24.0300501!4d90.2398112"><i class="fa fa-map-marker" aria-hidden="true"></i></a></div>                    
+            <div class="contact-wrapper">
+                <div class="contact-unit col-sm-3">
+                    <div class="contact-unit-subsection">
+                        <a title="google-maps" href="https://www.google.com/maps/place/Nandan+Park/@24.0300501,90.2398112,15z/ data=!4m5!3m4!1s0x0:0x2672755a1a131e3e!8m2!3d24.0300501!4d90.2398112"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                    </div>                    
                     <p>Nobinagar savar,<br>Dhaka Bangladesh</p>
                 </div>
-                <div class="asd col-sm-3">
-                    <div class="qwe"><a href=""><i class="fa fa-phone" aria-hidden="true"></i></a></div>                <p>+8801743331996<br>+8801928737807</p>
+                <div class="contact-unit col-sm-3">
+                    <div class="contact-unit-subsection">
+                        <a title="phone" href=""><i class="fa fa-phone" aria-hidden="true"></i></a>
+                    </div>
+                    <p>+8801743331996<br>+8801928737807</p>
                 </div>
-                <div class="asd col-sm-3">
-                    <div class="qwe"><a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i></a></div>           <p>quickmasud@gmail.com<br>quickmasud@yahoo.com</p>
+                <div class="contact-unit col-sm-3">
+                    <div class="contact-unit-subsection">
+                        <a title="mail" href=""><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    </div>
+                    <p>quickmasud@gmail.com<br>quickmasud@yahoo.com</p>
                 </div>                
             </div>
             <form>
@@ -458,7 +415,7 @@
     </footer>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="slick/slick.min.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
