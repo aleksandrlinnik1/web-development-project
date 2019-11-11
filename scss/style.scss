@@ -410,9 +410,6 @@ header {
                 .all {
                     color: #fff;
                     background-color:#00897b;
-                } 
-                .all1 {
-                    border: 3px solid red;
                 }      
             }           
             a:hover {
@@ -992,13 +989,10 @@ footer {
                     margin-top: 5px;
                 }
                 .btn {
-
                     width: 100px;
                     height: 40px;
                     border-radius: 10px;
-
-                    font-size: 15px;
-          
+                    font-size: 15px;          
                 }
             }
         }
@@ -1387,11 +1381,12 @@ footer {
         }
     }
     footer {
-        .container {}
-        .row {
-            h2 {
-                font-size: 16px;
+        .container {
+            .row {
+                h2 {
+                    font-size: 16px;
+                }
             }
-        }
+        }        
     }
 }
