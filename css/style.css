@@ -694,7 +694,7 @@ header .row a:hover {
 }
 .blog .blog-row .blog-block .blog-col-1 {
   order: 1;
-  background-image: url("../image/Layer 11.png");
+  background-image: url("../image/Layer11.png");
   cursor: pointer;
 }
 .blog .blog-row .blog-block .blog-col-2 {
@@ -1108,7 +1108,7 @@ footer .row h2 {
 
   .blog .container .row .blog-block .blog-col-1 {
     order: 1;
-    background-image: url("../image/Layer 11.png");
+    background-image: url("../image/Layer11.png");
   }
   .blog .container .row .blog-block .blog-col-2 {
     order: 2;
