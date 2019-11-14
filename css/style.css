@@ -66,6 +66,10 @@ form {
   src: local(Arial);
   src: url("../fonts/OpenSans.ttf") format("opentype");
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -1168,6 +1172,9 @@ footer .row h2 {
   .servicing {
     padding: 20px 0;
   }
+  .servicing .container .row {
+    display: block;
+  }
   .servicing .container .row h2 {
     font-size: 25px;
   }
@@ -1177,6 +1184,9 @@ footer .row h2 {
   }
   .servicing .container .row .servicing-wrapper .unit {
     max-width: 100%;
+  }
+  .servicing .container .row .servicing-wrapper .unit img {
+    margin: 0 auto;
   }
 
   .latest-works {

@@ -23,6 +23,17 @@ $('.team-wrapper').slick({
     ]
   });
 
+
+  if (document.documentElement.clientWidth <= 576) {
+    $('.servicing-wrapper').slick({
+      infinite: true,
+      dots: true,
+      arrows : false,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+  }
+
   // search
   $(document).ready(function () {
     let searchBlock = $('#form');
@@ -127,3 +138,4 @@ categoriesContainer.addEventListener("click", ({ target }) => {
     currentCategory = target;
     target.classList.add("active");
 })
+

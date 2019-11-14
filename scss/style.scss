@@ -24,6 +24,9 @@
     src: local(Arial);
     src: url("../fonts/OpenSans.ttf") format("opentype");
 }
+html {
+    scroll-behavior: smooth;
+    }
 body {
     overflow-x: hidden;
     .container {
@@ -1273,6 +1276,7 @@ footer {
         padding: 20px 0;
         .container {
             .row {
+                display: block;
                 h2 {
                     font-size: 25px;
                 }
@@ -1285,6 +1289,13 @@ footer {
                         max-width: 100%;
                     }
                 }
+                .servicing-wrapper {
+                    .unit {
+                        img {
+                            margin: 0 auto;
+                        }
+                    }
+                }                
             }
         }      
     }
