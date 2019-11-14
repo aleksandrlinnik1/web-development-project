@@ -72,6 +72,9 @@ body {
 body .container {
   max-width: 1403px;
 }
+body .container p:hover, body .container h1:hover, body .container h2:hover, body .container h3:hover {
+  color: #8c8c8c;
+}
 
 /*header*/
 header {
@@ -121,7 +124,11 @@ header .row .r-block #form {
   display: none;
 }
 header .row .r-block #form input {
-  width: 75px;
+  width: 90vw;
+  position: absolute;
+  top: 64px;
+  right: 0px;
+  z-index: 100px;
 }
 header .row .navbar-brand {
   font-size: 25px;
@@ -230,6 +237,7 @@ header .row a:hover {
   font-size: 30px;
 }
 .about .row p {
+  text-align: center;
   margin-top: 40px;
   max-width: 625px;
   font-size: 15px;
@@ -248,6 +256,9 @@ header .row a:hover {
 .about .row .about-card .card h5 {
   font-family: "OpenSans-Semibold", sans-serif;
   font-size: 20px;
+}
+.about .row .about-card .card:hover {
+  background-color: #e4fdf9;
 }
 
 /*section servicing*/
@@ -454,9 +465,6 @@ header .row a:hover {
 .latest-works .row ul li .all {
   color: #fff;
   background-color: #00897b;
-}
-.latest-works .row ul li .all1 {
-  border: 3px solid red;
 }
 .latest-works .row ul a:hover {
   color: #fff;
@@ -687,6 +695,7 @@ header .row a:hover {
 .blog .blog-row .blog-block .blog-col-1 {
   order: 1;
   background-image: url("../image/Layer 11.png");
+  cursor: pointer;
 }
 .blog .blog-row .blog-block .blog-col-2 {
   order: 2;
@@ -696,10 +705,12 @@ header .row a:hover {
 }
 .blog .blog-row .blog-block .blog-col-4 {
   background-image: url("../image/apple-desk.png");
+  cursor: pointer;
   order: 4;
 }
 .blog .blog-row .blog-block .blog-col-5 {
   background-image: url("../image/imac-apple.png");
+  cursor: pointer;
   order: 5;
 }
 .blog .blog-row .blog-block .blog-col-6 {
@@ -733,7 +744,8 @@ header .row a:hover {
   color: #00897b;
   cursor: url("../image/blog.png"), pointer;
 }
-.blog .blog-row .blog-block .blog-col h4 {
+.blog .blog-row .blog-block .blog-col .name {
+  margin: 0;
   text-align: left;
   display: inline-block;
   font-family: "OpenSans", sans-serif;
@@ -783,8 +795,14 @@ header .row a:hover {
 .contact form input {
   height: 60px;
 }
+.contact form input:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
 .contact form textarea {
   margin-top: 30px;
+}
+.contact form textarea:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .contact form .btn {
   position: absolute;
@@ -801,6 +819,9 @@ header .row a:hover {
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: 1px;
+}
+.contact form .btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .contact .row {
   display: flex;
@@ -846,6 +867,9 @@ header .row a:hover {
 .contact .contact-wrapper .contact-unit .contact-unit-subsection a {
   color: white;
   font-size: 50px;
+}
+.contact .contact-wrapper .contact-unit .contact-unit-subsection:hover {
+  background: #5f6cc2;
 }
 .contact .contact-wrapper .contact-unit p {
   margin-top: 20px;
@@ -898,6 +922,19 @@ footer .row h2 {
   }
 }
 @media screen and (max-width: 992px) {
+  header .row .navbar-brand {
+    font-size: 20px;
+  }
+  header .row .fa-bars {
+    font-size: 20px;
+  }
+  header .row a {
+    font-size: 20px;
+  }
+  header .row .r-block #form input {
+    top: 56px;
+  }
+
   .home .row h1 {
     font-size: 40px;
   }
@@ -1254,7 +1291,7 @@ footer .row h2 {
     height: 70px;
   }
 
-  footer .row h2 {
+  footer .container .row h2 {
     font-size: 16px;
   }
 }

@@ -28,11 +28,14 @@ body {
     overflow-x: hidden;
     .container {
         max-width: 1403px;
+        p:hover, h1:hover, h2:hover, h3:hover{
+            color: #8c8c8c;
+        }
     }
 }
 
 /*header*/
-header {  
+header { 
     height: 80px;
     position: absolute;
     display: flex;
@@ -73,7 +76,11 @@ header {
             }
             #form {
                 input {
-                    width: 75px;
+                    width: 90vw;
+                    position: absolute;
+                    top: 64px;
+                    right: 0px;
+                    z-index: 100px;
                 }
                 padding: 10px;
                 display: none;
@@ -186,6 +193,7 @@ header {
             font-size: 30px;      
         }
         p {
+            text-align: center;
             margin-top: 40px;
             max-width: 625px;
             font-size: 15px;        
@@ -203,6 +211,9 @@ header {
                     font-family: "OpenSans-Semibold", sans-serif;               
                     font-size: 20px;     
                 }
+            }
+            .card:hover {
+                background-color: #e4fdf9;
             }
         }
     }      
@@ -645,6 +656,7 @@ header {
             .blog-col-1 {
                 order: 1; 
                 background-image: url("../image/Layer 11.png");
+                cursor: pointer;
             }
             .blog-col-2 {
               order: 2;                
@@ -654,10 +666,12 @@ header {
             }
             .blog-col-4 {
                 background-image: url("../image/apple-desk.png");
+                cursor: pointer;
                 order: 4;
             }
             .blog-col-5 {
                 background-image: url("../image/imac-apple.png");
+                cursor: pointer;
                 order: 5;
             }
             .blog-col-6 {
@@ -690,7 +704,8 @@ header {
                     color: #00897b;
                     cursor: url('../image/blog.png'), pointer;
                 }
-                h4 {
+                .name {
+                    margin: 0;
                     text-align: left;
                     display: inline-block;
                     font-family: "OpenSans", sans-serif;
@@ -742,8 +757,14 @@ header {
         input {
             height: 60px;
         }
+        input:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
         textarea {
             margin-top: 30px;
+        }
+        textarea:hover {
+            background-color: rgba(255, 255, 255, 0.9);
         }
         .btn {
             position: absolute;
@@ -760,6 +781,9 @@ header {
             font-weight: bold;
             line-height: 1.1;
             letter-spacing: 1px;            
+        }
+        .btn:hover {
+            background-color: rgba(255, 255, 255, 0.9);
         }
     }
     .row {
@@ -804,6 +828,9 @@ header {
                     color: white;
                     font-size: 50px;
                 }
+            }
+            .contact-unit-subsection:hover {
+                background: #5f6cc2;
             }
             p {
                 margin-top: 20px;
@@ -880,6 +907,26 @@ footer {
     }
 }
 @media screen and (max-width: 992px) {
+    header {
+        .row {
+            .navbar-brand {
+                font-size: 20px;
+            }
+            .fa-bars {
+                font-size: 20px;
+            }
+            a {
+                font-size: 20px;
+            }
+            .r-block {
+                #form {
+                    input {
+                        top: 56px;
+                    }
+                }
+            }
+        } 
+    }
     .home {
         .row {
             h1 {
@@ -1011,7 +1058,7 @@ footer {
                 font-size: 20px;
             }
         } 
-    } 
+    }
     .home {
         .row {
             h1 {        
