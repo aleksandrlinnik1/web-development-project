@@ -2,77 +2,64 @@
 <html lang="zxx">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/awesome/css/font-awesome.min.css">   
     <link rel="stylesheet" href="./slick/slick.css">
     <link rel="stylesheet" href="./slick/slick-theme.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style/style.scss">
     <title>web</title>
   </head>
   <body>
     <header>
-        <div class="container">
-            <div class="row">
-                <a title="Your Logo" class="navbar-brand" href="#">Your Logo</a>
-                <div class="r-block">
-                    <div class="navbar navbar-expand-lg">                    
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span ><i class="fa fa-bars" aria-hidden="true"></i></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto #menu">
-                                <li class="nav-item">
-                                    <a title="Home" class="nav-link" href="#home">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a title="About" class="nav-link" href="#about">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a title="Servicing" class="nav-link" href="#plan">Servicing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a title="Portfolio" class="nav-link" href="#team">Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a title="Blog" class="nav-link" href="#blog">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a title="Contact us" class="nav-link" href="./form.html">Contact us</a>
-                                </li>             
-                            </ul>
-                        </div>
-                        <button id="open"><i class="fa fa-search" aria-hidden="true"></i></button>
-                        <div id="form">
-                            <form action="#" method="post">
-                                <input type="text" value="" placeholder="Search" />
-                            </form>
-                        </div>    
-                    </div>
-                </div>  
-            </div> 
-        </div>               
-    </header>      
-    <section class="home" id="home">
-        <div class="container">
-            <div class="row">                
-                    <h1>Web development project</h1>
-                    <p>Very suitable to support all web development projects</p>
-                    <div class="home-bt">
-                        <a title="Our services" class="text-uppercase bt-left" href="#services">our services</a>
-                        <a title="Hire is now" class="text-uppercase bt-right" href="#now">hire is now</a> 
-                    </div>                                                     
-            </div>  
-            <a title="Down" class="arrow"  href="#about"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
-        </div>                                     
-    </section>
-    <section class="about" id="about"> 
+        <div class="header__head">
+            <div class="container head__content">
+                <div class="header__logo">
+                    <a href="#header__main">Your Logo</a>
+                </div>
+                <nav class="header__desktopNav">
+                    <ul class="header__desktopNav_ul">
+                        <li><a title="Home" href="#header__main">Home</a></li>
+                        <li><a title="About" href="#about">About</a></li>
+                        <li><a title="Servicing" href="#plan">Servicing</a></li>
+                        <li><a title="Portfolio" href="#team">Portfolio</a></li>
+                        <li><a title="Blog" href="#blog">Blog</a></li>
+                        <li><a title="Contact us" href="#contact">Contact us</a></li>
+                    </ul>
+                </nav>
+                <nav class="header__mobileNav">
+                    <h3>NAVIGATION</h3>
+                    <ul class="header__mobileNav_ul">
+                        <li><a title="Home" href="#header__main">Home</a></li>
+                        <li><a title="About" href="#about">About</a></li>
+                        <li><a title="Servicing" href="#plan">Servicing</a></li>
+                        <li><a title="Portfolio" href="#team">Portfolio</a></li>
+                        <li><a title="Blog" href="#blog">Blog</a></li>
+                        <li><a title="Contact us" href="#contact">Contact us</a></li>
+                    </ul>
+                </nav>
+                <div class="header__burger">
+                    <div class="header__burger_line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header__main container" id="header__main">
+          <h1>Web development project</h1>
+          <p>Very suitable to support all web development projects</p>
+          <div class="header__mainBtn">
+              <a class="header__mainBtn-btn" href="#services">our services</a>
+              <a class="header__mainBtn-btn" href="#now">hire is now</a>
+          </div>
+          <a href="#about"><div class="header__mainBtn_arrow"></div></a>
+        </div>
+    </header>
+    <section class="about" id="about">
         <div class="container">
             <div class="row">
                 <h2>About Us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>                
                 <div class="about-card col-12">
-                    <div class="card col-12 col-sm-4 text-center">
+                    <div>
                         <img class="mx-auto" src="./image/internet.png" title="Internet"  alt="internet">
                         <div class="card-body">
                             <h5 class="card-title">Awesome Icons</h5>

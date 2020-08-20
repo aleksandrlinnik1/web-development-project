@@ -1,185 +1,40 @@
 @import "reset";
+@import "header";
+
 @font-face {
-    font-family: "OpenSans-Semibold";
-    src: local(Arial);
-    src: url("../fonts/OpenSans-Semibold.ttf") format("opentype");
+    font-family: 'OpenSans';
+    src:url('../fonts/OpenSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-    font-family: "OpenSans-Regular";
-    src: local(Arial);
-    src: url("../fonts/OpenSans-Regular.ttf") format("opentype");
+    font-family: 'OpenSansBold';
+    src:url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-    font-family: "OpenSans-Bold";
-    src: local(Arial);
-    src: url("../fonts/OpenSans-Bold.ttf") format("opentype");
+    font-family: 'OpenSansSemibold';
+    src:url('../fonts/OpenSansSemibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-@font-face {
-    font-family: "Roboto-Bold";
-    src: local(Arial);
-    src: url("../fonts/Roboto-Bold.ttf") format("opentype");
+
+* {
+  box-sizing: border-box;
 }
-@font-face {
-    font-family: "OpenSans";
-    src: local(Arial);
-    src: url("../fonts/OpenSans.ttf") format("opentype");
-}
-html {
-    scroll-behavior: smooth;
-    }
+
 body {
     overflow-x: hidden;
-    .container {
-        max-width: 1403px;
-        p:hover, h1:hover, h2:hover, h3:hover{
-            color: #8c8c8c;
-        }
-    }
+    font-family: 'OpenSans';
 }
-
-/*header*/
-header { 
-    height: 80px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    font-family: "OpenSans-Bold", sans-serif;
-    color: rgb(0, 0, 0); 
-    background-color: #fff;
-    .row {  
-        padding: 0 50px;
-        align-items: center;            
-        justify-content: space-between;
-        .show {
-            position: absolute;
-            top: 50px;
-            right: 65px;
-            padding: 10px 30px;
-            background-color: #fff;
-            border: 2px solid #8c8c8c;
-            border-radius: 5px;
-            z-index: 10;
-        }
-        .r-block {
-            display: flex;
-            align-items: center;
-            .navbar {
-                .collapsing {
-                    display: none;
-                }
-                padding: 0;
-            }
-            button {
-                border: none;
-                background: none;
-                font-size: 20px;
-            }
-            button:hover {
-                color: rgba(0, 0, 0, 0.6);
-            }
-            #form {
-                input {
-                    width: 90vw;
-                    position: absolute;
-                    top: 64px;
-                    right: 0px;
-                    z-index: 100px;
-                }
-                padding: 10px;
-                display: none;
-              }
-        }
-        .navbar-brand {
-            font-size: 25px;
-        }
-        .fa-bars {
-            font-size: 25px;
-        }
-        a {
-            display: inline-block;
-            font-family: "OpenSans-Semibold", sans-serif; 
-            font-size: 20px;       
-            color: rgb(0, 0, 0);
-        }
-        a:hover {
-            color: rgba(0, 0, 0, 0.6);
-        } 
-    }       
+.container {
+  max-width: 85vw;
+  @media screen and (max-width: 768px) {
+    max-width: 100vw;}
 }
-
-/*section home*/
-.home {
-    padding: 80px 0 20px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background-image: url("../image/bg-one.jpg"); 
-    background-size: cover;
-    background-repeat: no-repeat;    
-    background-position: center center;
-    .row {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        h1 {
-            text-align: center;
-            font-family: "OpenSans-Semibold", sans-serif;
-            font-size: 60px;
-            letter-spacing: 3px;
-            color: #fff;           
-        }
-        p {
-            margin-top: 30px;
-            text-align: center;
-            font-family: "OpenSans", sans-serif;
-            font-size: 22px;         
-            letter-spacing: 1.1px;
-            color: #fff;        
-        }
-        .home-bt {
-            margin-top: 40px;
-            display: flex;
-            font-family: "Roboto-Bold", sans-serif;
-            font-size: 20px;  
-            color: #fff;
-            a {
-                color: #fff;
-                text-decoration: none;
-            }
-            .bt-left {
-                margin: 0 10px;
-                padding: 20px 34px;
-                border: solid 2px #f8f8f8;
-            }
-            .bt-right { 
-                margin: 0 10px;               
-                padding: 20px 43px;
-                border: solid 2px #f8f8f8;        
-            }
-            .bt-left:hover, .bt-right:hover {
-                background-color: #00897b;
-                border: solid 2px #00897b;
-                cursor: url('../image/cursor.png'), pointer;
-            }   
-        }
-    } 
-    .arrow {
-        position: absolute;
-        right: 50%;
-        bottom: 15px;
-        margin-right: -18px;
-        color: #fff;
-        font-size: 25px;
-    }
-    .arrow:hover {
-        color: rgba(161, 159, 159, 0.9);
-    }
-    a {
-        display: inline-block;
-    }     
+.overflowYHidden {
+  overflow-y: hidden;
 }
 
 /*section about*/
@@ -225,7 +80,8 @@ header {
 /*section servicing*/
 .servicing {
     padding: 50px 0;
-    background-color: #e4fdf9; 
+    background-color: #e4fdf9;
+    display: none;
     .row {
         display: flex;
         flex-direction: column;
@@ -308,7 +164,7 @@ header {
 /*section latest-works*/
 .latest-works {
     padding: 50px 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     .row {
@@ -437,7 +293,7 @@ header {
 /*section pricing-plan*/
 .pricing-plan {
     padding: 50px 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     background-color: #f0f1f1;
@@ -550,6 +406,7 @@ header {
 /*section team*/
 .team {
     padding: 50px 0;
+    display: none;
     .slick-slide {
         width: 200px;
     }
@@ -811,7 +668,7 @@ header {
     }
     .contact-wrapper {
         margin-top: 90px;
-        display: flex;        
+        display: none;
         align-items: center;
         justify-content: center;
         .contact-unit {
@@ -863,6 +720,7 @@ footer {
         }
     }   
 }
+/*
 @media screen and (max-width: 1200px) {
     .latest-works {
         .container {
@@ -1448,3 +1306,4 @@ footer {
         }        
     }
 }
+*/

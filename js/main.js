@@ -1,47 +1,3 @@
-// slider
-$('.team-wrapper').slick({
-    infinite: true,
-    dots: true,
-    arrows : false,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    responsive: [
-	    {
-	      breakpoint: 1200,
-	      settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        }
-      },
-      {
-	      breakpoint: 800,
-	      settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      }
-    ]
-  });
-
-
-  if (document.documentElement.clientWidth <= 576) {
-    $('.servicing-wrapper').slick({
-      infinite: true,
-      dots: true,
-      arrows : false,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    });
-  }
-
-  // search
-  $(document).ready(function () {
-    let searchBlock = $('#form');
-    $(document).on('click', '#open', function () {
-      searchBlock.slideToggle();
-      return false;
-    });
-  });
 
 // sorting
 const categories = [
@@ -138,4 +94,24 @@ categoriesContainer.addEventListener("click", ({ target }) => {
     currentCategory = target;
     target.classList.add("active");
 })
+
+
+const findEl = (sel, parent) =>(parent || document).querySelector(sel);
+
+
+
+
+burgerToggle = findEl('.header__burger');
+mobileNav = findEl('.header__mobileNav');
+bodY = findEl('body');
+
+burgerToggle.addEventListener('click', mobileMenu);
+
+
+
+function mobileMenu () {
+  burgerToggle.classList.toggle('header__burger-active');
+  mobileNav.classList.toggle('header__mobileNav-active');
+  bodY.classList.toggle('overflowYHidden');
+}
 
