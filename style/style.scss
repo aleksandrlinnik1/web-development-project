@@ -1,6 +1,7 @@
 @import "reset";
 @import "header";
 @import "aboutUs";
+@import "ourServices";
 
 @font-face {
     font-family: 'OpenSans';
@@ -50,95 +51,14 @@ body {
     @media (max-width: 768px){
         font-size: 1em;
         width: 85vw;
+        margin-bottom: 2em;
     }
 }
 
 
 
 
-/*section servicing*/
-.servicing {
-    padding: 50px 0;
-    background-color: #e4fdf9;
-    display: none;
-    .row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        h2 {
-            font-family: "OpenSans-Bold", sans-serif;
-            font-size: 30px;        
-            letter-spacing: 1.5px;          
-        }
-        p {
-            margin-top: 30px;
-            max-width: 625px;
-            font-family: "OpenSans", sans-serif;
-            font-size: 15px;            
-        }
-        .servicing-wrapper {
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-            flex-wrap: wrap;
-            .unit {
-                max-width: 30%;
-                padding: 50px 45px;
-                background-color: #fff;
-                margin:0 10px 20px;
-                text-align: center;
-                .phonehover {
-                    display: none;
-                }           
-                h5 {
-                    margin-top: 10px;
-                    font-family: "OpenSans-Semibold", sans-serif;
-                    font-size: 20px;  
-                    letter-spacing: 1.3px;
-                    line-height: 1.67;
-                }
-                p {
-                    margin-top: 10px;
-                    font-family: "OpenSans", sans-serif;
-                    letter-spacing: 0.75px;
-                    line-height: 1.67;
-                    font-size: 15px;            
-                } 
-                .btn {
-                    display: inline-block;
-                    margin-top: 20px;
-                    padding: 15px 10px;
-                    border: 2px solid rgb(0, 0, 0);
-                    border-radius: 0;
-                    font-family: "OpenSans-Semibold", sans-serif;
-                    font-size: 20px;
-                    font-weight: 600;
-                    line-height: 1.1;
-                    letter-spacing: 1px;           
-                    cursor: url('../image/cursor.png'), pointer;
-                }
-            } 
-            .unit:hover {
-                background-color: #00897b;
-                box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.35);
-                color: #fff;
-                .phone {
-                    display: none;
-                }
-                .phonehover {
-                    display: flex;
-                    margin: 0 auto;
-                }
-                a {
-                    border: 2px solid #fff;
-                    color: #fff;
-                }
-            } 
-        }        
-    }   
-}          
+
 
 /*section latest-works*/
 .latest-works {
