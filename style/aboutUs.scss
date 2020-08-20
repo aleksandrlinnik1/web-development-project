@@ -1,0 +1,34 @@
+.section__aboutUs {
+  padding-top: 4em;
+  }
+.section_aboutUs_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section__aboutUs_wrap {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5em;
+  @media (max-width: 768px){
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+}
+.aboutUs_wrap_col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+  @media (max-width: 768px){
+    width: 90%;
+    margin-bottom: 2em;
+  }
+  h3 {
+    font-size: 1.5em;
+    margin: 1em 0;
+  }
+}

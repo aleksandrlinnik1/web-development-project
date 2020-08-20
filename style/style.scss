@@ -1,5 +1,6 @@
 @import "reset";
 @import "header";
+@import "aboutUs";
 
 @font-face {
     font-family: 'OpenSans';
@@ -36,46 +37,24 @@ body {
 .overflowYHidden {
   overflow-y: hidden;
 }
-
-/*section about*/
-.about {
-    padding: 50px 0;
-    font-family: "OpenSans", sans-serif;
-    .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        h2 {
-            font-family: "OpenSans-Bold", sans-serif;
-            font-size: 30px;      
-        }
-        p {
-            text-align: center;
-            margin-top: 40px;
-            max-width: 625px;
-            font-size: 15px;        
-        }
-        .about-card {
-            display: flex;
-            margin-top: 50px;
-            flex-wrap: wrap;
-            .card {
-                border: none;
-                p {
-                    margin-top: 20px;
-                }
-                h5 {
-                    font-family: "OpenSans-Semibold", sans-serif;               
-                    font-size: 20px;     
-                }
-            }
-            .card:hover {
-                background-color: #e4fdf9;
-            }
-        }
-    }      
+.section_heading {
+    font-family: "OpenSansBold", sans-serif;
+    font-size: 2em;
+    margin-bottom: 1em;
 }
+.section_description {
+    text-align: center;
+    margin-bottom: 4em;
+    width: 75vw;
+    font-size: 1.2em;
+    @media (max-width: 768px){
+        font-size: 1em;
+        width: 85vw;
+    }
+}
+
+
+
 
 /*section servicing*/
 .servicing {

@@ -134,7 +134,7 @@ header {
     }
   }
 }
-/*---------------------------------------*/
+/*-------------------------------------header__main----------------------------*/
 .header__main {
   display: flex;
   flex-direction: column;
@@ -148,7 +148,7 @@ header {
     font-size: 3em;
     margin-bottom: 1em;
     @media (max-width: 768px){
-      font-size: 7vw;
+      font-size: 2em;
     }
   }
   p {
@@ -156,7 +156,7 @@ header {
     font-size: 1.5em;
     margin-bottom: 2em;
     @media (max-width: 768px){
-      font-size: 4vw;
+      font-size: 1.5em;
     }
   }
   .header__mainBtn {
